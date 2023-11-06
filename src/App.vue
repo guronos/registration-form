@@ -6,24 +6,30 @@
 
 <script>
 import RegistrationForm from '@/components/RegistrationForm.vue'
+
 export default {
     name: 'App',
     components: {
-        RegistrationForm
-    }
+        RegistrationForm,
+    },
 }
 </script>
 
 <style>
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#app {
+    font-family: 'Montserrat', sans-serif;
 }
 </style>
