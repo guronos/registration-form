@@ -1,4 +1,4 @@
-# registration-form
+# registration-form Vue 2
 
 ## Project setup
 ```
