@@ -47,8 +47,8 @@
                     <div class="modal__actions_last-child">
                         <VCheckbox
                             :text="checkboxData"
-                            :active-status="publicStatus"
-                            @clickCheckbox="publicStatus = $event"
+                            :active-status="checkboxStatus"
+                            @clickCheckbox="checkboxStatus = $event"
                         />
                         <button class="modal__btn" @click="validateAll">
                             Зарегистрироваться
@@ -204,7 +204,7 @@ export default {
                 },
             },
             showProfile: true,
-            publicStatus: true,
+            checkboxStatus: true,
             checkboxData: [
                 {
                     type: 'text',
@@ -257,7 +257,7 @@ export default {
             }
         },
         validateAll() {
-            if (!this.publicStatus) return
+            if (!this.checkboxStatus) return
             let status = this.validatePassword
             for (const key in this.componentData) {
                 if (!this.componentData[key].props.model) {
@@ -300,7 +300,7 @@ export default {
     color: #000000;
 }
 
-.hr {
+hr {
     color: #d9d9d9;
 }
 
