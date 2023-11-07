@@ -239,7 +239,7 @@ export default {
                         'Content-Type': 'application/json; charset=utf-8',
                     },
                     body: JSON.stringify({
-                        public: this.publicStatus,
+                        public: this.showProfile,
                         username: this.componentData.userName.props.model,
                         email: this.componentData.userEmail.props.model,
                         role: this.componentData.userRole.props.model,
